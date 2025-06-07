@@ -43,16 +43,19 @@ pip install pyelftools capstone angr r2pipe
 
 python3 analyzer.py <elf_file> [options]
 
-### Options:
-Option	Description
---json-output FILE	Save results to JSON file
---verbose	Print detailed results to stdout
---summary	Print one-line summary of key features
---quiet	Suppress all output (for scripting)
---angr	Analyze with angr
---r2	Analyze with radare2
---ghidra	Analyze with Ghidra (headless)
---ghidra-path PATH	Custom path to Ghidra installation
+### Options
+
+| Option              | Description                                      |
+|---------------------|--------------------------------------------------|
+| `--json-output FILE` | Save results to JSON file                       |
+| `--verbose`          | Print detailed results to stdout                |
+| `--summary`          | Print one-line summary of key features          |
+| `--quiet`            | Suppress all output (for scripting)             |
+| `--angr`             | Analyze with `angr`                             |
+| `--r2`               | Analyze with `radare2`                          |
+| `--ghidra`           | Analyze with `Ghidra` (headless)                |
+| `--ghidra-path PATH` | Custom path to `Ghidra` installation            |
+
 
 ##📄 Example
 
