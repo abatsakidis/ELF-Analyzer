@@ -68,7 +68,7 @@ python3 analyzer.py ./target --angr --r2 --json-output out.json --quiet
 
 ## 📁 Output (JSON format)
 
-{
+<pre> ```json{
   "file": "./binary",
   "architecture": "64-bit",
   "pie": true,
@@ -89,7 +89,7 @@ python3 analyzer.py ./target --angr --r2 --json-output out.json --quiet
     "0x401081:\tmov rbp, rsp",
     ...
   ]
-}
+}``` </pre>
 
 ## 🛠 Notes
 
