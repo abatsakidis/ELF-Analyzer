@@ -57,7 +57,7 @@ python3 analyzer.py <elf_file> [options]
 | `--ghidra-path PATH` | Custom path to `Ghidra` installation            |
 
 
-##📄 Example
+## 📄 Example
 
 python3 analyzer.py /bin/ls --summary
 
