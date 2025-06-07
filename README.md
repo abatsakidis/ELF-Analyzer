@@ -67,7 +67,29 @@ python3 analyzer.py ./target --angr --r2 --json-output out.json --quiet
 [SUMMARY] Arch: 64-bit | PIE: Yes | NX: Yes | Canary: Yes | RELRO: Full | Imports: 17 | Symbols: 128
 
 ## 📁 Output (JSON format)
-<pre> ```json { "file": "./binary", "architecture": "64-bit", "pie": true, "nx": true, "relro": "Full RELRO", "canary": true, "imports": ["puts", "printf", "exit"], "symbols": [ { "name": "main", "address": "0x401080", "type": "FUNC" } // ... other symbols ], "rop_gadgets": [ "0x400123:\tpop rdi ; ret" // ... other gadgets ], "disassembly": [ "0x401080:\tpush rbp", "0x401081:\tmov rbp, rsp" // ... other instructions ] } ``` </pre>
+```json
+{
+  "file": "./binary",
+  "architecture": "64-bit",
+  "pie": true,
+  "nx": true,
+  "relro": "Full RELRO",
+  "canary": true,
+  "imports": ["puts", "printf", "exit"],
+  "symbols": [
+    { "name": "main", "address": "0x401080", "type": "FUNC" },
+    
+  ],
+  "rop_gadgets": [
+    "0x400123:\tpop rdi ; ret",
+   
+  ],
+  "disassembly": [
+    "0x401080:\tpush rbp",
+    "0x401081:\tmov rbp, rsp",
+    
+  ]
+}```
 
 ## 🛠 Notes
 
