@@ -68,7 +68,7 @@ python3 analyzer.py ./target --angr --r2 --json-output out.json --quiet
 
 ## 📁 Output (JSON format)
 
-```{
+```json{
   "file": "./binary",
   "architecture": "64-bit",
   "pie": true,
@@ -89,11 +89,11 @@ python3 analyzer.py ./target --angr --r2 --json-output out.json --quiet
     "0x401081:\tmov rbp, rsp",
     ...
   ]
-}```
+}``` </pre>
 
 ## 🛠 Notes
 
-    For --ghidra to work, ensure Ghidra is installed and the analyzeHeadless script is available.
+For --ghidra to work, ensure Ghidra is installed and the analyzeHeadless script is available.
 
     --quiet disables all terminal output except for errors.
 
